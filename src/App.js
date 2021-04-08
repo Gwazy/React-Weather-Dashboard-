@@ -58,7 +58,11 @@ const App = () => {
 
   return (
     <div className="app">
-      <header></header>
+      <div className="app-header">
+        <div></div>
+        <h1>Weather Dashboard</h1>
+        <img src={logo} className="app-logo" alt="logo" />
+      </div>
 
       <body
         className={
@@ -69,13 +73,9 @@ const App = () => {
             : "app"
         }
       >
-        <div className="app-header">
-          <div></div>
-          <h1>Weather Dashboard</h1>
-          <img src={logo} className="app-logo" alt="logo" />
+        <div>
+          <h2>Enter Location</h2>
         </div>
-        <h2>Enter Location</h2>
-
         <div className="search-box">
           <input
             type="text"
