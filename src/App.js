@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "./cartoon_sun.png";
+import logo from "./assets/cartoon_sun.png";
 import "./App.css";
 
 const api = {
@@ -57,12 +57,8 @@ const App = () => {
   };
 
   return (
-    <div>
-      <header className="app-header">
-        <div></div>
-        <h1>Weather Dashboard</h1>
-        <img src={logo} className="app-logo" alt="logo" />
-      </header>
+    <div className="app">
+      <header></header>
 
       <body
         className={
@@ -73,6 +69,11 @@ const App = () => {
             : "app"
         }
       >
+        <div className="app-header">
+          <div></div>
+          <h1>Weather Dashboard</h1>
+          <img src={logo} className="app-logo" alt="logo" />
+        </div>
         <h2>Enter Location</h2>
 
         <div className="search-box">
